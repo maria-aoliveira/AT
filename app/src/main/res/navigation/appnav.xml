@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/appnav"
+    app:startDestination="@id/perfil_dest">
+
+    <fragment
+        android:id="@+id/perfil_dest"
+        android:name="com.example.myapplication.fragments.perfil"
+        android:label="fragment_perfil"
+        tools:layout="@layout/fragment_perfil" >
+        <action
+            android:id="@+id/action_perfil_dest_to_lista_dest"
+            app:destination="@id/lista_dest" />
+    </fragment>
+    <fragment
+        android:id="@+id/lista_dest"
+        android:name="com.example.myapplication.fragments.lista"
+        android:label="fragment_lista"
+        tools:layout="@layout/fragment_lista" >
+        <action
+            android:id="@+id/action_lista_dest_to_faq_dest"
+            app:destination="@id/faq_dest" />
+    </fragment>
+    <fragment
+        android:id="@+id/faq_dest"
+        android:name="com.example.myapplication.fragments.faq"
+        android:label="fragment_faq"
+        tools:layout="@layout/fragment_faq" />
+</navigation>

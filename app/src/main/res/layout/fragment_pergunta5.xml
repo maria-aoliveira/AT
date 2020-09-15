@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryColor"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context=".fragments.pergunta5">
+
+    <TextView
+        android:id="@+id/pergunta5"
+        style="@style/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Pergunta5" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup5"
+       android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/a5"
+            style="@style/opcoes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Opcao51" />
+
+        <RadioButton
+            android:id="@+id/b5"
+            style="@style/opcoes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Opcao52"/>
+
+        <RadioButton
+            android:id="@+id/c5"
+            style="@style/opcoes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Opcao53" />
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/prox5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/próximo"
+        android:padding="8dp"/>
+
+</LinearLayout>

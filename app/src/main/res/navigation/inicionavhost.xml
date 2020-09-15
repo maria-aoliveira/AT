@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/inicionavhost"
+    app:startDestination="@id/inicio">
+
+    <include app:graph="@navigation/navhost"/>
+
+    <fragment
+        android:id="@+id/inicio"
+        android:name="com.example.myapplication.fragments.Inicio"
+        android:label="Teste de Perfil de Investidor"
+        tools:layout="@layout/fragment_inicio" />
+        <action
+            android:id="@+id/action_fragment_to_second_graph"
+            app:destination="@id/navhost" />
+    <fragment
+        android:id="@+id/sobre"
+        android:name="com.example.myapplication.fragments.Sobre"
+        android:label="Sobre"
+        tools:layout="@layout/fragment_sobre" />
+    <fragment
+        android:id="@+id/detalhes"
+        android:name="com.example.myapplication.fragments.Detalhes"
+        android:label="Informações"
+        tools:layout="@layout/fragment_detalhes" />
+</navigation>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryColor"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context=".fragments.pergunta9">
+
+    <TextView
+        android:id="@+id/pergunta9"
+        style="@style/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Pergunta9" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/a9"
+            style="@style/opcoes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Opcao91" />
+
+        <RadioButton
+            android:id="@+id/b9"
+            style="@style/opcoes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Opcao92" />
+
+        <RadioButton
+            android:id="@+id/c9"
+            style="@style/opcoes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Opcao93" />
+
+        <RadioButton
+            android:id="@+id/d9"
+            style="@style/opcoes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Opcao94" />
+
+        <RadioButton
+            android:id="@+id/e9"
+            style="@style/opcoes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Opcao95" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/prox9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/próximo"
+        android:padding="8dp"/>
+
+</LinearLayout>

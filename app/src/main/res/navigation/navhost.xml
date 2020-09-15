@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navhost"
+    app:startDestination="@id/pergunta1">
+
+    <include app:graph="@navigation/appnav"/>
+
+    <fragment
+        android:id="@+id/pergunta1"
+        android:name="com.example.myapplication.fragments.pergunta1"
+        android:label="fragment_pergunta1"
+        tools:layout="@layout/fragment_pergunta1" >
+        <action
+            android:id="@+id/action_pergunta1_to_pergunta2"
+            app:destination="@id/pergunta2"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/pergunta3"
+        android:name="com.example.myapplication.fragments.pergunta3"
+        android:label="fragment_pergunta2"
+        tools:layout="@layout/fragment_pergunta3" >
+        <action
+            android:id="@+id/action_pergunta3_to_pergunta4"
+            app:destination="@id/pergunta4"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/pergunta6"
+        android:name="com.example.myapplication.fragments.pergunta6"
+        android:label="fragment_pergunta6"
+        tools:layout="@layout/fragment_pergunta6" >
+        <action
+            android:id="@+id/action_pergunta6_to_pergunta7"
+            app:destination="@id/pergunta7"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/pergunta2"
+        android:name="com.example.myapplication.fragments.pergunta2"
+        android:label="fragment_pergunta2"
+        tools:layout="@layout/fragment_pergunta2" >
+        <action
+            android:id="@+id/action_pergunta2_to_pergunta3"
+            app:destination="@id/pergunta3"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/pergunta4"
+        android:name="com.example.myapplication.fragments.pergunta4"
+        android:label="fragment_pergunta4"
+        tools:layout="@layout/fragment_pergunta4" >
+        <action
+            android:id="@+id/action_pergunta4_to_pergunta5"
+            app:destination="@id/pergunta5"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/pergunta5"
+        android:name="com.example.myapplication.fragments.pergunta5"
+        android:label="fragment_pergunta5"
+        tools:layout="@layout/fragment_pergunta5" >
+        <action
+            android:id="@+id/action_pergunta5_to_pergunta6"
+            app:destination="@id/pergunta6"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/pergunta7"
+        android:name="com.example.myapplication.fragments.pergunta7"
+        android:label="fragment_pergunta7"
+        tools:layout="@layout/fragment_pergunta7" >
+        <action
+            android:id="@+id/action_pergunta7_to_pergunta8"
+            app:destination="@id/pergunta8"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/pergunta8"
+        android:name="com.example.myapplication.fragments.pergunta8"
+        android:label="fragment_pergunta8"
+        tools:layout="@layout/fragment_pergunta8" >
+        <action
+            android:id="@+id/action_pergunta8_to_pergunta9"
+            app:destination="@id/pergunta9"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/pergunta9"
+        android:name="com.example.myapplication.fragments.pergunta9"
+        android:label="fragment_pergunta9"
+        tools:layout="@layout/fragment_pergunta9" />
+    <fragment
+        android:id="@+id/inicio"
+        android:name="com.example.myapplication.fragments.Inicio"
+        android:label="fragment_inicio"
+        tools:layout="@layout/fragment_inicio" >
+           </fragment>
+</navigation>
